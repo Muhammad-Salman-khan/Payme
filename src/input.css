@@ -50,3 +50,7 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.group:focus .group-focus\:flex {
+  display: flex;
+}
