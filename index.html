@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayME</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="min-h-screen max-w-screen bg-white font-bold">
+      <div class="p-5">
+        <nav class="m-5">
+          <div
+            class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 h-16"
+          >
+            <div class="flex gap-4">
+              <!-- Logo -->
+              <h1 class="text-xl font-extrabold text-[#25A4AD] tracking-wide">
+                Payme
+              </h1>
+              <div
+                class="hidden md:flex ml-4 justify-center align-middle items-center"
+              >
+                <ul
+                  class="flex justify-center align-middle items-center gap-4 font-medium"
+                >
+                  <li><a href="#" class="font-normal">Home</a></li>
+                  <li><a href="#" class="font-normal">About</a></li>
+                  <li><a href="#" class="font-normal">Testimonials</a></li>
+                  <li><a href="#" class="font-normal">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Hamburger -->
+            <button
+              id="menu-btn"
+              onclick="Open()"
+              class="md:hidden inline-flex transition-all duration-200 items-center justify-center w-10 h-10 text-gray-700 hover:text-[#25A4AD] focus:outline-none"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </button>
+
+            <!-- Desktop Menu -->
+            <ul
+              id="menu"
+              class="hidden md:flex items-center space-x-8 font-medium"
+            >
+              <li>
+                <button
+                  class="px-4 py-2 rounded-lg hover:bg-[#25A4AD] hover:text-white transition"
+                >
+                  Sign In
+                </button>
+              </li>
+              <li>
+                <button
+                  class="border-2 border-[#25A4AD] text-[#25A4AD] px-7 py-2 hover:bg-[#25A4AD] hover:text-white transition"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu -->
+          <nav
+            id="mobile-menu"
+            class="hidden md:hidden border-b-2 border-gray-400"
+          >
+            <ul
+              class="flex flex-col justify-center align-middle items-center space-y-3 p-4 font-medium"
+            >
+              <li><a href="#" class="hover:text-[#25A4AD]">Home</a></li>
+              <li><a href="#" class="hover:text-[#25A4AD]">About</a></li>
+              <li><a href="#" class="hover:text-[#25A4AD]">Testimonials</a></li>
+              <li><a href="#" class="hover:text-[#25A4AD]">Contact</a></li>
+              <li class="flex flex-col">
+                <button
+                  class="w-[200px] text-black px-4 py-2 rounded-lg hover:bg-[#25A4AD] hover:text-white transition"
+                >
+                  Sign In
+                </button>
+              </li>
+              <li>
+                <button
+                  class="w-[200px] border-2 border-[#25A4AD] text-[#25A4AD] px-4 py-2 rounded-lg hover:bg-[#25A4AD] hover:text-white transition"
+                >
+                  Sign Up
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </nav>
+
+        <!--  Hero Section -->
+        <section class="border-2 m-5">
+          <div
+            class="container mx-auto flex flex-col lg:flex-row items-center justify-between p-6 sm:py-12 lg:py-24 gap-10"
+          >
+            <!-- Text Content -->
+            <div
+              class="flex flex-col justify-center lg:w-1/2 text-center lg:text-left"
+            >
+              <h1 class="text-5xl font-bold leading-tight sm:text-6xl">
+                Ac mattis <span class="text-[#25A4AD]">senectus</span> erat
+                pharetra
+              </h1>
+              <p class="mt-6 mb-8 text-lg">
+                Dictum aliquam porta in condimentum ac integer turpis pulvinar,
+                est scelerisque ligula sem
+              </p>
+              <div
+                class="flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4"
+              >
+                <a
+                  href="#"
+                  class="px-8 py-3 text-lg font-semibold rounded bg-[#25A4AD] text-white hover:opacity-90 transition"
+                  >Suspendisse</a
+                >
+                <a
+                  href="#"
+                  class="px-8 py-3 text-lg font-semibold border-2 border-[#25A4AD] text-[#25A4AD] rounded hover:bg-[#25A4AD] hover:text-white transition"
+                  >Malesuada</a
+                >
+              </div>
+            </div>
+
+            <!-- Image Content -->
+            <div
+              class="lg:w-1/2 flex justify-center items-center h-full lg:h-[30rem]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1616428362406-4ffd9fcbf023?ixlib=rb-4.1.0&auto=format&fit=crop&q=80&w=1887"
+                alt="Hero Image"
+                class="object-cover h-full w-auto rounded-lg"
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- End Hero Section -->
+    </div>
+  </body>
+</html>
